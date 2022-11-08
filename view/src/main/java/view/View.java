@@ -20,29 +20,29 @@ import entity.IMap;
 /**
  * The Class View.
  *
- * @author Arthur Caldeireiro based on the work of Jean-Aymeric Diet
+ * @author User
  */
 public final class View extends Observable implements IView, KeyListener {
 
-	/** The Game Windows (Frame) */
+	/** Création de la fênetre du jeu */
 	private BoardFrame boardFrame;
 
-	/** The Game View (Part of the map we see) */
+	/** Création de l'interface du jeu */
 	final Rectangle gameView = new Rectangle(0, 0, 11, 11);
 
-	/** The map. */
+	/** Création de la carte du jeu */
 	private IMap map;
 
-	/** The player */
+	/** Création du joueur */
 	private IMobile myPlayer;
 
-	/** The order performer. */
+	/** Création de l’intervenant de commande. */
 	private IOrderPerformer orderPerformer;
 
 
 	/**
 	 * 
-	 * Instantiates a new View.
+	 * Instanciation d'une nouvelle View.
 	 * 
 	 * @param map
 	 * @param myPlayer
@@ -87,7 +87,7 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 *  Update the view with the new position of the frames
+	 *  Mis à jour de la vue avec la nouvelle position des cadres
 	 */
 	public void updateView() {
 		for (int x = 0; x < this.getmap().getWidth(); x++) {
@@ -99,8 +99,7 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Key code to user order.
-	 *
+	 * 
 	 * @param keyCode the key code
 	 * @return the user order
 	 */
@@ -185,16 +184,16 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Gets the map.
+	 * Obtenir la carte.
 	 *
-	 * @return the map
+	 * @return la carte
 	 */
 	private IMap getmap() {
 		return this.map;
 	}
 
 	/**
-	 * Display the map
+	 * Affichage de la carte 
 	 *
 	 * @param map the new map
 	 * @throws IOException Signals that an I/O exception has occurred.
@@ -209,16 +208,16 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Gets the player.
+	 * Obtenir le joueur.
 	 *
-	 * @return the player
+	 * @return le joueur
 	 */
 	private IMobile getmyPlayer() {
 		return this.myPlayer;
 	}
 
 	/**
-	 * Sets  the player.
+	 * Définir la joueur.
 	 * 
 	 * @param myPlayer
 	 */
@@ -228,25 +227,25 @@ public final class View extends Observable implements IView, KeyListener {
 
 
 	/**
-	 * Gets the gameView.
+	 * Obtenir le gameView.
 	 *
-	 * @return the gameView
+	 * @return le gameView
 	 */
 	private Rectangle getgameView() {
 		return this.gameView;
 	}
 
 	/**
-	 * Gets the order performer.
+	 * Obtienir l’intervenant de commande.
 	 *
-	 * @return the order performer
+	 * @return l’intervenant de commande
 	 */
 	private IOrderPerformer getOrderPerformer() {
 		return this.orderPerformer;
 	}
 
 	/**
-	 * Sets the order performer.
+	 * Définir l’intervenant de commande.
 	 *
 	 * @param orderPerformer the new order performer
 	 */
@@ -255,9 +254,9 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Gets the order BoardFrame.
+	 * Obtienir l’ordre BoardFrame.
 	 *
-	 * @return the BoardFrame
+	 * @return l’ordre BoardFrame
 	 */
 	public BoardFrame getBoardFrame() {
 		return boardFrame;
