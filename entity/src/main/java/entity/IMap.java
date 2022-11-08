@@ -9,6 +9,7 @@ import java.util.Observable;
  * @author Laetitia
  * @version 0.1
  */
+
 public interface IMap {
 
     /**

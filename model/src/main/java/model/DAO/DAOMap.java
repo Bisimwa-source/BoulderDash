@@ -13,12 +13,12 @@ import java.util.ArrayList;
 public class DAOMap {
 
 	/**
-	 * The connection
+	 * attribut privé connection
 	 */
 	private DBConnection myConnection;
 
 	/**
-	 * Instantiates DAO map
+	 * Instantiatiation de  DAO map
 	 */
 	public DAOMap() throws ClassNotFoundException, SQLException {
 		this.myConnection = new DBConnection();
@@ -40,7 +40,7 @@ public class DAOMap {
 	}
 
 	/**
-	 * load the level
+	 * chargement du niveau
 	 * @param id
 	 * @throws IOException
 	 */

@@ -21,15 +21,16 @@ import java.util.Observable;
  * @version 0.1
  */
 
+
 class Map extends Observable implements IMap {
 
-	/** The width. */
+	/** La longueur. */
 	private int width;
 
-	/** The height. */
+	/** La largeur. */
 	private int height;
 
-	/** The on the map. */
+	/** element sur la carte. */
 	private IElement[][] onTheMap;
 
 	private boolean isCorrect = true;
@@ -37,9 +38,9 @@ class Map extends Observable implements IMap {
 	private List<Integer> hasChanged = new ArrayList<Integer>();
 
 	/**
-	 * Instantiates a new map with the content of the file fileName.
+	 * Instantier une nouvelle carte avec le contenu de the file fileName.
 	 *
-	 * @param fileName the file name where the map is
+	 * @param fileName 
 	 * @throws IOException Signals that an I/O exception has occurred.
 	 */
 	Map(final String fileName) throws IOException {
@@ -48,7 +49,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/**
-	 * Loads file.
+	 * chargement du dossier.
 	 *
 	 * @param fileName the file name
 	 * @throws IOException Signals that an I/O exception has occurred.
@@ -95,7 +96,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/*
-	 * Gets element on the map
+	 * méthode nous permettant de retourner un  élement on the map
 	 *
 	 */
 	@Override
@@ -104,7 +105,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/**
-	 * Sets the on the map XY.
+	 * méthode nous permettant de modifier the on the map XY.
 	 *
 	 * @param element the element
 	 * @param x       the x
@@ -118,7 +119,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/*
-	 * Sets the mobile has changed
+	 * méthode nous permettant de modifier  mobile has changed
 	 *
 	 */
 	@Override
@@ -128,7 +129,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/*
-	 * Gets the width
+	 * méthode nous permettant de retourner la largeur
 	 * 
 	 */
 	@Override
@@ -137,7 +138,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/**
-	 * Sets the width.
+	 * méthode nous permettant de modifier la largeur.
 	 *
 	 * @param width the new width
 	 */
@@ -146,7 +147,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/*
-	 * Gets the height
+	 * méthode nous permettant de retourner la hauteur
 	 * 
 	 */
 	@Override
@@ -155,7 +156,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/**
-	 * Sets the height.
+	 * méthode nous permettant de modifier la hauteur.
 	 *
 	 * @param height the new height
 	 */
@@ -164,7 +165,7 @@ class Map extends Observable implements IMap {
 	}
 
 	/*
-	 * Gets the observable
+	 * méthode nous permettant de retourner l'objet observable
 	 * 
 	 */
 	@Override

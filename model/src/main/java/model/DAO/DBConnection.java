@@ -12,15 +12,15 @@ import java.sql.SQLException;
 public class DBConnection {
 
 	/**
-	 * the database url
+	 * l'url de la base de données
 	 */
 	private static String URL = "jdbc:mysql://localhost/jpublankproject?autoReconnect=true&useSSL=false";
 	/**
-	 * the user
+	 *identification de l'uilisateur
 	 */
 	private static String USER = "root";
 	/**
-	 * the password 
+	 * mot de passe 
 	 */
 	private static String PASSWD = "";
 
@@ -29,7 +29,7 @@ public class DBConnection {
 	private DBConnection INSTANCE;
 
 	/**
-	 * Gets the instance
+	 * méthode nous permettant de retourner les instances au niveau de la base de données.
 	 */
 	public DBConnection getInstance() {
 		if (INSTANCE != null) {
@@ -39,7 +39,7 @@ public class DBConnection {
 	}
 
 	/**
-	 * Connects to the database
+	 * méthode permettant de nous conncter à la base de données.
 	 */
 	public void connect() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.jdbc.Driver");
@@ -47,28 +47,28 @@ public class DBConnection {
 	}
 	
 	/**
-	 * Gets the connection
+	 * méthode nous permettant de retourner la connectio avec la base de données
 	 */
 	public Connection getConnection() {
 		return connection;
 	}
 	
 	/**
-	 * Gets the URL
+	 * méthode nous permettant de retourner l'url de la base de données.
 	 */
 	public String getURL() {
 		return URL;
 	}
 
 	/**
-	 * Gets the user
+	 * méthode nous permettant de retourner le nom de l'utilisateur au niveau de la base de données.
 	 */
 	public  String getUSER() {
 		return USER;
 	}
 
 	/**
-	 * Gets the password
+	 * méthode nous permettant de retourner le mot de passe mis au nveau de la base de données.
 	 * @return
 	 */
 	public  String getPASSWD() {

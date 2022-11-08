@@ -19,18 +19,18 @@ import entity.mobile.MyPlayer;
  */
 public class BoulderDashModel implements IModel {
 
-	/** The map. */
+	/** attribut privé map. */
 	private IMap map;
 
-	/** The my player. */
+	/** attribut privé MyPlayer. */
 	private IMobile myPlayer;
 
 	/**
-	 * Instantiates a new boulder dash model.
+	 * instanciation des objets map et MyPlayer au niveau du constructeur BoulderDashModel.
 	 *
-	 * @param myPlayerStartX the my player start X
-	 * @param myPlayerStartY the my player start Y
-	 * @throws IOException ignals that an I/O exception has occurred.
+	 * @param myPlayerStartX défini comme abscisse lors du déplacement de Myplayer
+	 * @param myPlayerStartY défini comme ordonnée lors du déplacement de Myplayer
+	 * @throws IOException signales qu'une exception s'est passée (I/O exception) .
 	 */
 	public BoulderDashModel(final String mapFile, final int myPlayerStartX, final int myPlayerStartY) {
 		try {
@@ -46,7 +46,7 @@ public class BoulderDashModel implements IModel {
 	}
 
 	/**
-	 * Gets the map
+	 *méthode permettant de retourner la carte 
 	 */
 	@Override
 	public final IMap getMap() {
@@ -54,16 +54,16 @@ public class BoulderDashModel implements IModel {
 	}
 
 	/**
-	 * Sets the map.
+	 *  méthode permettant de modifier la carte.
 	 *
-	 * @param map the map to set
+	 * @param map 
 	 */
 	private void setMap(final IMap map) {
 		this.map = map;
 	}
 
 	/**
-	 * gets the player
+	 * méthode permettant retourner le joueur à partir de MyPayer.
 	 */
 	@Override
 	public final IMobile getMyPlayer() {
@@ -71,9 +71,9 @@ public class BoulderDashModel implements IModel {
 	}
 
 	/**
-	 * Sets the my player.
+	 * méthode permettant de modifier le joueur.
 	 *
-	 * @param myPlayer the player to set
+	 * @param myPlayer 
 	 */
 	private void setMyPlayer(final IMobile myPlayer) {
 		this.myPlayer = myPlayer;
