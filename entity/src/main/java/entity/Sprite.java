@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 /**
  * <h1>The Sprite class.</h1>
  *
- * @author Laetitia
+ * @author megane
  * @version 0.1
  */
 

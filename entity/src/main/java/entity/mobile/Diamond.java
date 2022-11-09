@@ -17,7 +17,7 @@ public class Diamond extends Mobile{
 	/**
 	 * Instantiates a new obstacle.
 	 */
-	 Diamond() {
+	 public Diamond() {
 		super(SPRITE, Permeability.DIAMOND);
 	}
 

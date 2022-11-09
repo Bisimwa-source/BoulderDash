@@ -16,7 +16,7 @@ public class MonsterR extends Mobile {
 	/**
 	 * Instantiates a new monster.
 	 */
-	MonsterR() {
+	public MonsterR() {
 		super(SPRITE, Permeability.KILLABLE);
 	}
 
