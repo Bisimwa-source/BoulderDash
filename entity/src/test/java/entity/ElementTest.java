@@ -11,7 +11,7 @@ import entity.mobile.MonsterG;
 import entity.mobile.MonsterR;
 
 public class ElementTest {
-	//on met les attributs;
+	//on crée les attributs;
 static Boulder boulder;
 static MonsterG monsterG;
 static MonsterR monsterR;
