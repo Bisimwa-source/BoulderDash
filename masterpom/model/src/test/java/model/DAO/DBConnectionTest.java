@@ -27,7 +27,7 @@ public class DBConnectionTest {
 	// nous allons utiliser la methode testGetURL pour faire la comparaison;
 	public void testGetURL() {
 		//fail("Not yet implemented");
-		// on fait appel à la méthode assertEquals pour comparer l'adresse URL l'adresse URL sur la base de donnée; 
+		// on fait appel à la méthode assertEquals pour comparer l'adresse URL  sur la base de donnée; 
 		assertEquals(this.URL,this.instance.getURL());
 	}
 

@@ -34,6 +34,11 @@ static MonsterR monsterR;
 		assertEquals(test1, this.monsterG.getPermeability());
 		assertEquals(test2, this.monsterR.getPermeability());
 		
+		//on verifie si le sprite(les images) qui est contenu dans entity n'est pas vide ;
+		assertNotNull(this.boulder.getSprite());
+		assertNotNull(this.monsterG.getSprite());
+		assertNotNull(this.monsterR.getSprite());
+		
 	}
 
 }
