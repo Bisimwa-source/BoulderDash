@@ -10,14 +10,14 @@ import fr.exia.showboard.ISquare;
  */
 public interface IElement extends ISquare {
 	/**
-	 * Gets the sprite.
+	 * méthode pour retourner the sprite.
 	 *
 	 * @return the sprite
 	 */
 	Sprite getSprite();
 
 	/**
-	 * Gets the permeability.
+	 * méthode pour retourner  the permeability.
 	 *
 	 * @return the permeability
 	 */

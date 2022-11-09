@@ -28,14 +28,14 @@ public abstract class Element implements IElement {
 
 
     /**
-     * Gets the sprite
+     * méthode permettant de retourner the sprite
      */
     public final Sprite getSprite() {
         return this.sprite;
     }
 
     /**
-     * Sets the sprite.
+     * méthode permettant de modifier  the sprite.
      *
      * @param sprite the new sprite
      */
@@ -54,7 +54,7 @@ public abstract class Element implements IElement {
     }
 
     /**
-     * Sets the permeability.
+     *méthode permettant de modifier the permeability.
      *
      * @param permeability the new permeability
      */
@@ -63,7 +63,7 @@ public abstract class Element implements IElement {
     }
 
     /*
-     * Gets the Image
+     * méthode permettant de retourner getImage
      *
      */
     public final Image getImage() {
