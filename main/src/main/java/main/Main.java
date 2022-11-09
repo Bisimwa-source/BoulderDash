@@ -18,7 +18,7 @@ import view.View;
 import javax.swing.*;
 
 /**
- * The Class Main.
+ * La classe main.
  *
  * @author Laetitia, Arthur, Anthony
  */
@@ -32,7 +32,7 @@ public abstract class Main {
     private static  IBoulderDashController controller;
 
     /**
-     * The main method.
+     * La méthode main.
      *
      * @param args
      * @throws IOException
