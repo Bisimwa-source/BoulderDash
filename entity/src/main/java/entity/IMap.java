@@ -13,21 +13,21 @@ import java.util.Observable;
 public interface IMap {
 
     /**
-     * Gets the width.
+     * méthode pour retourner the width.
      *
      * @return the width
      */
     int getWidth();
 
     /**
-     * Gets the height.
+     * méthode pour retourner the height.
      *
      * @return the height
      */
     int getHeight();
 
     /**
-     * Gets on the map XY.
+     * méthode pour retourner on the map XY.
      *
      * @param x
      *            the x
@@ -38,7 +38,7 @@ public interface IMap {
     IElement getOnTheMapXY(int x, int y);
     
     /**
-     * Sets on the Map XY 
+     * méthode pour modifier on the Map XY 
      * @param element
      * @param x
      * @param y
@@ -46,12 +46,12 @@ public interface IMap {
     void setOnTheMapXY(IElement element, final int x, final int y);
 
     /**
-     * Sets the mobile has changed.
+     * méthode pour modifier the mobile has changed.
      */
     void setMobileHasChanged();
 
     /**
-     * Gets the observable.
+     * méthode pour retourner the observable.
      *
      * @return the observable
      */
