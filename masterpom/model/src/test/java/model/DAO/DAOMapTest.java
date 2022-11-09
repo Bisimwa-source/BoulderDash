@@ -11,7 +11,7 @@ public class DAOMapTest {
 	// on crée un attribut du type privé qui contiendra la carte map par défaut qui est dans le sprite et peut être ouvert sans base des données;
 	private String monDossier="map.txt";
 	
-// cette syntaxe est utilisé juste pour tracer et vérifier si le code fournit  lève des exceptions attendues ou non;
+	// cette syntaxe est utilisé juste pour tracer et vérifier si le code fournit  lève des exceptions attendues ou non;
 	@Test(expected = Exception.class)
 	
 	public void testApplyToMap()throws Exception {
