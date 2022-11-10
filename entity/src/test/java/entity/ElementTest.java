@@ -25,7 +25,7 @@ static MonsterR monsterR;
 	@Test
 	public void testgetPermeability() {
 		//créer les attributs qui seront comparés;
-		//fail("Not yet implemented");
+		
 		final Permeability test= Permeability.BOULDER;
 		final Permeability test1= Permeability.KILLABLE;
 		final Permeability test2= Permeability.KILLABLE;

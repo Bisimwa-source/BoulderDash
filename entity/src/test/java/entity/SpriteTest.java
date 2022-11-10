@@ -44,7 +44,7 @@ public class SpriteTest {
 	@Test
 	public void testGetConsoleImage() {
 		//pour comparer le symbol par defaut au niveau de la console;
-		//fail("Not yet implemented");
+		
 		final char nouvelleconsole= '*';
 		assertEquals(nouvelleconsole,this.diamond.getSprite().getConsoleImage());
 		final char nouvelleconsole1= 'O';
