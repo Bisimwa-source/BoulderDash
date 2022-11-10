@@ -7,13 +7,15 @@
   </parent>
   <artifactId>entity</artifactId>
   <name>Entity</name>
-   <reporting>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.3.0</version>
-      </plugin>
-    </plugins>
-  </reporting>
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>3.3</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>  
 </project>
