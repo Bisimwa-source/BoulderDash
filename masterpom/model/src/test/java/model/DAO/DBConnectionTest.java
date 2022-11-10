@@ -40,7 +40,7 @@ public class DBConnectionTest {
 
 	@Test
 	public void testGetPASSWD() {
-		//fail("Not yet implemented");
+		
 		// on comparre aussi le mot de passe sur la base des donnée; 
 		assertEquals(this.PASSWD,this.instance.getPASSWD());
 	}

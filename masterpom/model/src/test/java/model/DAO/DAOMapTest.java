@@ -15,7 +15,7 @@ public class DAOMapTest {
 	@Test(expected = Exception.class)
 	
 	public void testApplyToMap()throws Exception {
-		
+		/////////////
 		// verifier le dossier si il se trouve au niveau zero;
 		this.dao.loadlevel(monDossier, "0");
 	}
