@@ -236,7 +236,7 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Obtienir l’intervenant de commande.
+	 * Obtenir l’intervenant de commande.
 	 *
 	 * @return l’intervenant de commande
 	 */
@@ -254,7 +254,7 @@ public final class View extends Observable implements IView, KeyListener {
 	}
 
 	/**
-	 * Obtienir l’ordre BoardFrame.
+	 * Obtenir l’ordre BoardFrame.
 	 *
 	 * @return l’ordre BoardFrame
 	 */
