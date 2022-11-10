@@ -42,8 +42,8 @@ DELIMITER ;
 -- Structure de la table `level`	
 --	
 
-DROP TABLE IF EXISTS `maps`;	
-CREATE TABLE IF NOT EXISTS `maps` (	
+DROP TABLE IF EXISTS `map`;	
+CREATE TABLE IF NOT EXISTS `map` (	
   `id` int(11) NOT NULL AUTO_INCREMENT,	
   `level` varchar(54) NOT NULL,	
   `map` text NOT NULL,	
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `maps` (
 -- Déchargement des données de la table `level`	
 --	
 
-INSERT INTO `maps` (`id`, `level`, `map`) VALUES	
+INSERT INTO `level` (`id`, `level`, `map`) VALUES	
 (1, 'level1', '35\r\n25\r\n###################################\r\n#.                ..           OO #\r\n#      OO      ..                 #\r\n#    *          #     OO  **      #\r\n#      ..       #                 #\r\n#    ..X..      #      ..   ..    #\r\n#               #   ..X...     .  #\r\n#           O   #     ...         #\r\n#############################   . #\r\n#                 #               #\r\n#      *          #       **   .  #\r\n#     *   O   OO  #               #\r\n#     *           #               #\r\n#        ..   ..  #        ..G..  #\r\n#                           ...   #\r\n#            OO ..                #\r\n####    ###########################\r\n#                          # .....#\r\n#    *      OOO    O       # X.D..#\r\n#..G..                     # .....#\r\n#          #                      #\r\n#    *     #    **       OO       #\r\n#    *     #              O       #\r\n#          #                      #\r\n###################################'),	
 (2, 'level2', '###################################\r\n#. OO   #   **                  #D#\r\n#       #  ..X. **      ..X..     #\r\n#          .G..                   #\r\n#                       O         #\r\n#       #    **     O             #\r\n#    ** #    OOO     OO           #\r\n#   OO  #    O*O          *       #\r\n#            OOO     .G....       #\r\n#       #         ......          #\r\n#  **   #    OO     ..D..X        #\r\n#                 .X.....         #\r\n#  O    #                         #\r\n#    *  #         *               #\r\n###################################\r\n'),	
 (3, 'level3', '24\r\n15\r\n########################\r\n#....    O    ** ..X.. #\r\n#   ...    OO    ..    #\r\n#               OO     #\r\n#          **       ..X#\r\n###################    #\r\n#                      #\r\n#  ..G.  * O   . O..   #\r\n#         **       OO  #\r\n# ..G...         *     #\r\n##########    ##########\r\n#        ..OO...  *    #\r\n#                 ...  #\r\n#      **  .X.     X.D #\r\n########################'),	

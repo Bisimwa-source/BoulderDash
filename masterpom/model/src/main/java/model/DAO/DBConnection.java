@@ -14,7 +14,7 @@ public class DBConnection {
 	/**
 	 * the database url
 	 */
-	private static String URL = "jdbc:mysql://localhost/jpublankproject1?autoReconnect=true&useSSL=false";
+	private static String URL = "jdbc:mysql://localhost/jpublankproject?autoReconnect=true&useSSL=false";
 	/**
 	 * the user
 	 */
@@ -39,36 +39,36 @@ public class DBConnection {
 	}
 
 	/**
-	 * Connects to the database
+	 * connection à la base de données
 	 */
 	public void connect() throws ClassNotFoundException, SQLException {
-		Class.forName("com.mysql.cj.jdbc.Driver");
+		Class.forName("com.mysql.jdbc.Driver");
 		connection=DriverManager.getConnection(URL, USER, PASSWD);
 	}
 	
 	/**
-	 * Gets the connection
+	 * méthode retournant la connection
 	 */
 	public Connection getConnection() {
 		return connection;
 	}
 	
 	/**
-	 * Gets the URL
+	 * méthode retournant l'URL
 	 */
 	public String getURL() {
 		return URL;
 	}
 
 	/**
-	 * Gets the user
+	 * méthode retournant l'utilisateur 
 	 */
 	public  String getUSER() {
 		return USER;
 	}
 
 	/**
-	 * Gets the password
+	 * méthode retournant le mot de passe
 	 * @return
 	 */
 	public  String getPASSWD() {
